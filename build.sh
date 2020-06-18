@@ -58,6 +58,7 @@ fi
 
 echo -e "\nPreparing Delicious Lunch..."
 export ALLOW_MISSING_DEPENDENCIES=true
+export PB_PAT=$(cat vendor/pb/pb_devices.json | grep -A 4 '${CODENAME}' | grep patron | cut -d':' -f2 | awk -F '"' '{print $2}')
 source build/envsetup.sh
 lunch ${BUILD_LUNCH}
 

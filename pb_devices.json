@@ -217,7 +217,8 @@
     "rolex": {
       "name": "Redmi 4a",
       "maintainer": "Mohd Faraz",
-      "latest_release": "20200614-0632"
+      "latest_release": "20200614-0632",
+      "patron": "@androiabledroid"
     },
     "rosy": {
       "name": "Redmi 5",
